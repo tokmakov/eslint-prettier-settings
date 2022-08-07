@@ -1,0 +1,104 @@
+{
+    "editor.fontSize": 12,
+    "files.encoding": "utf8", // кодировка файлов
+    "files.eol": "\n", // концы строк как в linux
+    "files.insertFinalNewline": true, // пустая строка в конце файла
+    "files.trimTrailingWhitespace": true, // удалять пробелы в конце строк
+    "editor.insertSpaces": true, // заменять табуляцию на пробелы
+    "editor.tabSize": 4, // табуляция заменяется 4 пробелами
+    "editor.renderWhitespace": "all", // показывать символы пробелов
+    "files.autoSave": "afterDelay", // автоматическое сохранение файлов
+    "files.autoSaveDelay": 2000, // задержка перед сохранением файла
+
+    "workbench.colorCustomizations": {
+        "editorWarning.foreground": "#ff9933",
+        "editorError.foreground": "#FF0000",
+        "editorInfo.foreground": "#00AA00",
+    },
+
+    // По умолчанию форматирование кода запрещено
+    "editor.formatOnSave": false, // форматировать код при сохранении файла
+    "editor.formatOnPaste": false, // форматировать при вставке фрагмента кода
+    "editor.codeActionsOnSave": [], // набор действий при сохранении файла
+    "editor.defaultFormatter": null,
+    // Разрешить или запретить расширения eslint и prettier
+    "prettier.enable": true, // нужен рестарт vs code
+    "eslint.enable": true,
+    // Настройки форматирования javascript
+    "eslint.format.enable": true, // запретить или разрешить форматирование
+    "eslint.run": "onType", // запускать проверку кода по мере печати кода
+    "eslint.probe": [ // какие файлы нужно проверять
+        "javascript"
+    ],
+    "eslint.rules.customizations": [
+        // для проблем форматирования кода уровень info
+        {
+            "rule": "prettier/prettier",
+            "severity": "info"
+        }
+    ],
+    "[javascript]": {
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    // Настройки форматирования css
+    "css.format.enable": true,
+    "css.validate": true,
+    "css.format.newlineBetweenRules": false,
+    "css.format.newlineBetweenSelectors": false,
+    "css.lint.duplicateProperties": "warning",
+    "css.format.spaceAroundSelectorSeparator": true,
+    "[css]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    // Настройки форматирования json
+    "json.format.enable": true,
+    "json.validate.enable": true,
+    "[json]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    // Настройки форматирования html
+    "html.format.enable": true, // разрешить форматирование html-кода
+    "html.format.wrapLineLength": 100, // максимальная длина сроки до переносана новую
+    "html.format.unformatted": null, // эти теги не форматировать (см.ссылку в подсказке)
+    "html.format.contentUnformatted": "pre,code,textarea", // контент этих тегов не форматировать
+    "html.format.extraLiners": "", // пустая строка перед этими тегами
+    "html.format.preserveNewLines": false, // сохранять или нет пустые строки
+    "html.format.maxPreserveNewLines": null, // сколько пустых строк сохранять
+    "html.format.indentInnerHtml": false, // отступ <head> и <body> относительно <html>
+    "html.format.wrapAttributes": "preserve-aligned", // перенос и выравнивание атрибутов
+    "html.format.wrapAttributesIndentSize": null, // размер отступа при переносе и выравнивании атр.
+    "html.validate.scripts": true, // проверять js-скрипты внутри html-кода
+    "html.validate.styles": true, // проверять css-стили внутри html-кода
+    "[html]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.defaultFormatter": "vscode.html-language-features",
+    },
+    // Настройки форматирования markdown
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.defaultFormatter": "vscode.markdown-language-features"
+    },
+
+    // расширение Render Line Endings, которое показывает символы CR LF
+    "code-eol.newlineCharacter": "↓",
+    "code-eol.crlfCharacter": "←↓",
+    "code-eol.highlightNonDefault": true,
+    // расширение LiveServer, простой веб-сервер для разработки
+    "liveServer.settings.root": "/build",
+    "liveServer.settings.host": "localhost",
+    "liveServer.settings.fullReload": false,
+    "liveServer.settings.port": 5555,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+}

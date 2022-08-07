@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "rvest.vs-code-prettier-eslint",
+        "esbenp.prettier-vscode",
+        "medo64.render-crlf"
+    ]
+}
