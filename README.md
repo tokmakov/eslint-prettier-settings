@@ -1,4 +1,4 @@
-# Webpack. Начало работы
+# Расширение «ESLint» для VS Code
 
 [Расширение «ESLint» для VS Code, часть 1 из 2](https://tokmakov.msk.ru/blog/item/713)
 
